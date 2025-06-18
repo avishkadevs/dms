@@ -7,3 +7,4 @@ npx create-react-app@latest dms-client
 cd dms-client
 npm install axios
 
+npm install
