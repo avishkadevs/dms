@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dashboard {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.upload-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.upload-form button {
+  padding: 10px 15px;
+}
+
+.paper-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.paper-list li {
+  padding: 6px 0;
+}
+
