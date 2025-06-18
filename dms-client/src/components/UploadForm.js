@@ -15,7 +15,7 @@ function UploadForm({ onUploadSuccess }) {
     formData.append('file', file);
 
     try {
-      await axios.post('http://localhost/dms-backend/upload.php', formData);
+      await axios.post('http://localhost/dms/dms-backend/upload.php', formData);
       setTitle('');
       setFile(null);
       onUploadSuccess(); // trigger refresh

@@ -8,7 +8,7 @@ function PaperList({ refresh }) {
   useEffect(() => {
     const fetchPapers = async () => {
       try {
-        const res = await axios.get('http://localhost/dms-backend/list.php');
+        const res = await axios.get('http://localhost/dms/dms-backend/list.php');
         setPapers(res.data);
       } catch (err) {
         console.error('Error fetching papers:', err);
@@ -27,7 +27,7 @@ function PaperList({ refresh }) {
         <ul>
           {papers.map((paper) => (
             <li key={paper.id}>
-              {paper.title} - <a href={`http://localhost/dms-backend/uploads/${paper.file_name}`} download>Download</a>
+              {paper.title} - <a href={`http://localhost/dms/dms-backend/uploads/${paper.file_name}`} download>Download</a>
             </li>
           ))}
         </ul>
